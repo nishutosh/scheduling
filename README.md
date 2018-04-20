@@ -11,7 +11,7 @@ modify(index)
 ```
 ### Usage
 
-* Name sheets like `Monday`,``tuesday`,`Wednesday`...
+* Name sheets like `Monday`,`tuesday`,`Wednesday`...
 
 * Please do enter start time and end time at line 14 of Schedule.py
   ```python
