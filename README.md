@@ -6,7 +6,6 @@ from schedule.availabiliy import *
 reload()
 
 #to update a record
-
 modify(index)
 
 ```
