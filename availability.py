@@ -2,7 +2,7 @@ import openpyxl
 import json
 from datetime import datetime
 import calendar
-from Schedule import *
+from Schedule import scheduling
 
 
 current_time=datetime.now()
@@ -38,7 +38,8 @@ def modify(index):
   scheduling()
 
 
-
+input_n=input("enter index")  
+modify(input_n)
 
 
 
