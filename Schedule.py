@@ -46,7 +46,6 @@ def scheduling():
                          last=last+1
                       else:
                          break  
-    print(last)
     file_read=open("availability.json",mode="r")                
     check_availability=json.load(file_read)
     available=[index for index,status in check_availability.items() if status=="present"]

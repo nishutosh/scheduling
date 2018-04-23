@@ -15,7 +15,6 @@ def reload():
   status_upload={}
   for row in worksheet.iter_rows(min_row=2, min_col=0, max_col=1):
       for cell in row:
-          print(cell.value)
           status_upload[str(cell.value)]="absent"
   json.dump(status_upload, outfile)
   outfile.close()
@@ -31,10 +30,10 @@ def modify(index):
       check_availability[str(index)]="absent"
   elif check_availability[str(index)]=="absent":
       check_availability[str(index)]="present"
-  print(check_availability)
   file_read.close()
   file_write=open("availability.json",mode="w+")	  
   json.dump(check_availability,file_write)
+  file_write.close()
   scheduling()
 
 
